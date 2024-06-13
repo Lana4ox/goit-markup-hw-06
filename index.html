@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="HomeWorke Fullstack Developer course" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoIT Markup-HW</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,6 +55,11 @@
             </li>
           </ul>
         </address>
+        <button class="header-mobile-menu-btn" type="button">
+          <svg class="mobile-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -77,7 +83,7 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="section-item-title">Strategy</h3>
+              <h3 class="solution-section-item-title">Strategy</h3>
               <p class="section-item-description text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -89,7 +95,7 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="section-item-title">Punctuality</h3>
+              <h3 class="solution-section-item-title">Punctuality</h3>
               <p class="section-item-description text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -101,7 +107,7 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="section-item-title">Diligence</h3>
+              <h3 class="solution-section-item-title">Diligence</h3>
               <p class="section-item-description text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -113,7 +119,7 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="section-item-title">Technologies</h3>
+              <h3 class="solution-section-item-title">Technologies</h3>
               <p class="section-item-description text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -126,11 +132,12 @@
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
-          <ul class="section-item">
+          <ul class="team-section-item">
             <li class="team-card">
               <img
                 class="card-image"
-                src="./images/img-3.jpg"
+                srcset="./images/team-mark.jpg 1x, ./images/team-mark-2x.jpg 2x"
+                src="./images/team-mark.jpg"
                 alt="a young man with dark hair and a beard looks at you kindly"
               />
               <div class="team-card-content">
@@ -187,7 +194,8 @@
             <li class="team-card">
               <img
                 class="card-image"
-                src="./images/img-2.jpg"
+                srcset="./images/team-tom.jpg 1x, ./images/team-tom-2x.jpg 2x"
+                src="./images/team-tom.jpg"
                 alt="a young man with blond hair looks to the right, smiling cheerfully and squinting"
               />
               <div class="team-card-content">
@@ -244,7 +252,11 @@
             <li class="team-card">
               <img
                 class="card-image"
-                src="./images/img-1.jpg"
+                srcset="
+                  ./images/team-camila.jpg    1x,
+                  ./images/team-camila-2x.jpg 2x
+                "
+                src="./images/team-camila.jpg"
                 alt="a young pretty girl with long dark hair and wearing a warm pink sweater is looking at you sweetly"
               />
               <div class="team-card-content">
@@ -301,7 +313,11 @@
             <li class="team-card">
               <img
                 class="card-image"
-                src="./images/img.jpg"
+                srcset="
+                  ./images/team-daniel.jpg    1x,
+                  ./images/team-daniel-2x.jpg 2x
+                "
+                src="./images/team-daniel.jpg"
                 alt="a young man with dark wavy hair and a slight unshaven face looks at you with a friendly smile"
               />
               <div class="team-card-content">
@@ -362,14 +378,38 @@
       <section class="portfolio section">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
-          <ul class="section-item">
+          <ul class="portfolio-section-item">
             <li class="portfolio-card">
               <div class="portfolio-image">
+                <!-- <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-banking-app-mob.jpg    1x,
+                      ./images/portfolio-banking-app-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-banking-app-tab.jpg    1x,
+                      ./images/portfolio-banking-app-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-banking-app-desktop.jpg    1x,
+                      ./images/portfolio-banking-app-desktop-2x.jpg 2x
+                    "
+                    media="(min-width: 1158px)"
+                  />
+                  </picture> -->
                 <img
                   class="card-image"
-                  src="./images/banking-app.jpg"
+                  src="./images/portfolio-banking-app-desktop.jpg"
                   alt="on a white-lilac background a visual representation of the application's capabilities"
                 />
+
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -385,7 +425,7 @@
               <div class="portfolio-image">
                 <img
                   class="card-image"
-                  src="./images/cashless-payment.jpg"
+                  src="./images/portfolio-cashless-payment-desktop.jpg"
                   alt="a person pays for services through the bank's web application"
                 />
                 <p class="overlay-text">
@@ -403,7 +443,7 @@
               <div class="portfolio-image">
                 <img
                   class="card-image"
-                  src="./images/meditation-app.jpg"
+                  src="./images/portfolio-meditation-app-desctop.jpg"
                   alt="the same meditation application is open in the laptop and phone"
                 />
                 <p class="overlay-text">
@@ -421,7 +461,7 @@
               <div class="portfolio-image">
                 <img
                   class="card-image"
-                  src="./images/taxi-service.jpg"
+                  src="./images/potfolio-taxi-service-desktop.jpg"
                   alt="a taxi driver is holding the steering wheel with gloves on and using a web application to manage orders"
                 />
                 <p class="overlay-text">
@@ -439,7 +479,7 @@
               <div class="portfolio-image">
                 <img
                   class="card-image"
-                  src="./images/screen-illustrations.jpg"
+                  src="./images/portfolio-screen-illusrtations-desktop.jpg"
                   alt="wallpaper for the main screen and desktops of the phone: a view of the moon in a rocky area in purple tones"
                 />
                 <p class="overlay-text">
@@ -457,7 +497,7 @@
               <div class="portfolio-image">
                 <img
                   class="card-image"
-                  src="./images/online-courses.jpg"
+                  src="./images/portfolio-online-cources-desktop.jpg"
                   alt="a young girl with wavy hair in sunglasses, an orange sweater in spring weather is listening to a lecture in a mobile application through headphones with pleasure"
                 />
                 <p class="overlay-text">
@@ -560,6 +600,82 @@
       </div>
     </footer>
 
+    <!-- <div class="mobile-menu-backdrop">
+      <div class="mobile-menu">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a href="./index.html" class="mobile-menu-link">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="./index.html" class="mobile-menu-link">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="./index.html" class="mobile-menu-link">Contacts</a>
+          </li>
+        </ul>
+
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-address-list">
+            <li class="mobile-menu-address-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu-address-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-menu-address-item">
+              <a href="tel:+110001111111" class="mobile-menu-address-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="mobile-menu-socials-list">
+          <li class="mobile-menu-socials-item">
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              class="socials-link"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a href="https://twitter.com/" target="_blank" class="socials-link">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a
+              href="https://facebook.com/"
+              target="_blank"
+              class="socials-link"
+            >
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-menu-socials-item">
+            <a href="http://www.linkedin.com/" class="socials-link">
+              <svg class="socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+
     <div class="modal-backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" data-modal-close type="button">
@@ -639,9 +755,13 @@
               ><span class="checkbox-icon"
                 ><svg class="accept-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-accept"></use></svg></span
-              >I accept the terms and conditions of the
-              <a href="" class="accept-link">Privacy Policy</a></label
-            >
+            ></label>
+            <div class="checkbox-text-wrap">
+              <p class="checkbox-text">
+                I accept the terms and conditions of the
+              </p>
+              <a href="" class="accept-link">Privacy Policy</a>
+            </div>
           </div>
           <button class="form-button" type="submit">Send</button>
         </form>
